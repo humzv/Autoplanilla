@@ -1,0 +1,38 @@
+{
+  "autoPlanillaApp": {
+    "detallePago": {
+      "home": {
+        "title": "Detalle Pagos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Detalle Pago",
+        "createOrEditLabel": "Create or edit a Detalle Pago",
+        "notFound": "No Detalle Pagos found"
+      },
+      "created": "A new Detalle Pago is created with identifier {{ param }}",
+      "updated": "A Detalle Pago is updated with identifier {{ param }}",
+      "deleted": "A Detalle Pago is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Detalle Pago {{ id }}?"
+      },
+      "detail": {
+        "title": "Detalle Pago"
+      },
+      "id": "ID",
+      "userID": "User ID",
+      "company": "Company",
+      "sequenceBank": "Sequence Bank",
+      "salarioBruto": "Salario Bruto",
+      "adicionales": "Adicionales",
+      "deducciones": "Deducciones",
+      "otrasdeducciones": "Otrasdeducciones",
+      "socialSecurity": "Social Security",
+      "renta": "Renta",
+      "pagoNeto": "Pago Neto",
+      "adicionalesnodeducibles": "Adicionalesnodeducibles",
+      "type": "Type",
+      "status": "Status",
+      "processID": "Process ID",
+      "planilla": "Planilla"
+    }
+  }
+}

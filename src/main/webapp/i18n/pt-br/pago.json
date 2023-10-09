@@ -1,0 +1,38 @@
+{
+  "autoPlanillaApp": {
+    "pago": {
+      "home": {
+        "title": "Pagos",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Pago",
+        "createOrEditLabel": "Criar ou editar Pago",
+        "notFound": "Nenhum Pago encontrado"
+      },
+      "created": "Um novo Pago foi criado com o identificador {{ param }}",
+      "updated": "Um Pago foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Pago foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Pago {{ id }}?"
+      },
+      "detail": {
+        "title": "Pago"
+      },
+      "id": "ID",
+      "userID": "User ID",
+      "company": "Company",
+      "sequenceBank": "Sequence Bank",
+      "salarioBruto": "Salario Bruto",
+      "adicionales": "Adicionales",
+      "deducciones": "Deducciones",
+      "otrasdeducciones": "Otrasdeducciones",
+      "socialSecurity": "Social Security",
+      "renta": "Renta",
+      "pagoNeto": "Pago Neto",
+      "adicionalesnodeducibles": "Adicionalesnodeducibles",
+      "type": "Type",
+      "status": "Status",
+      "processID": "Process ID",
+      "planilla": "Planilla"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "autoPlanillaApp": {
+    "JornadaType": {
+      "null": "",
+      "TiempoCompleto": "TiempoCompleto",
+      "MedioTiempo": "MedioTiempo",
+      "OcasionalHoras": "OcasionalHoras",
+      "OcasionalDias": "OcasionalDias"
+    }
+  }
+}

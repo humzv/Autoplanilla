@@ -1,0 +1,41 @@
+{
+  "autoPlanillaApp": {
+    "planilla": {
+      "home": {
+        "title": "Planillas",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Planilla",
+        "createOrEditLabel": "Crear o editar Planilla",
+        "notFound": "Ningún Planillas encontrado"
+      },
+      "created": "Un nuevo Planilla ha sido creado con el identificador {{ param }}",
+      "updated": "Un Planilla ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Planilla ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Planilla {{ id }}?"
+      },
+      "detail": {
+        "title": "Planilla"
+      },
+      "id": "ID",
+      "tipo": "Tipo",
+      "consecutivoBAC": "Consecutivo BAC",
+      "planBAC": "Plan BAC",
+      "nombre": "Nombre",
+      "notas": "Notas",
+      "aprobador": "Aprobador",
+      "notificantes": "Notificantes",
+      "moneda": "Moneda",
+      "vacasMulti": "Vacas Multi",
+      "grupoAprobador": "Grupo Aprobador",
+      "pagador": "Pagador",
+      "grupoContabilidad": "Grupo Contabilidad",
+      "estado": "Estado",
+      "pago": "Pago",
+      "detallePago": "Detalle Pago",
+      "employee": "Employee",
+      "user": "User",
+      "company": "Company"
+    }
+  }
+}

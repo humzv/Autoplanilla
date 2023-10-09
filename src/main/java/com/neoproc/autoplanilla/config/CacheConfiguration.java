@@ -51,6 +51,18 @@ public class CacheConfiguration {
             createCache(cm, com.neoproc.autoplanilla.domain.User.class.getName());
             createCache(cm, com.neoproc.autoplanilla.domain.Authority.class.getName());
             createCache(cm, com.neoproc.autoplanilla.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.neoproc.autoplanilla.domain.Company.class.getName());
+            createCache(cm, com.neoproc.autoplanilla.domain.Company.class.getName() + ".employees");
+            createCache(cm, com.neoproc.autoplanilla.domain.Company.class.getName() + ".planillas");
+            createCache(cm, com.neoproc.autoplanilla.domain.Company.class.getName() + ".users");
+            createCache(cm, com.neoproc.autoplanilla.domain.Employee.class.getName());
+            createCache(cm, com.neoproc.autoplanilla.domain.Planilla.class.getName());
+            createCache(cm, com.neoproc.autoplanilla.domain.Planilla.class.getName() + ".pagos");
+            createCache(cm, com.neoproc.autoplanilla.domain.Planilla.class.getName() + ".detallePagos");
+            createCache(cm, com.neoproc.autoplanilla.domain.Planilla.class.getName() + ".employees");
+            createCache(cm, com.neoproc.autoplanilla.domain.Planilla.class.getName() + ".users");
+            createCache(cm, com.neoproc.autoplanilla.domain.Pago.class.getName());
+            createCache(cm, com.neoproc.autoplanilla.domain.DetallePago.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

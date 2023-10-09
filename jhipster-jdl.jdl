@@ -1,0 +1,146 @@
+entity Company {
+    nombre String required,
+    tipoIdentificacion TipoCedulaCompany required,
+    identificacion String required unique,
+    correoElectronico String required,
+    nombreComercial String,
+    telefono Integer, 
+    provincia String,
+    canton String,
+    distrito String,
+    barrio String,
+    sennas String,
+    estado Estado required,
+    website String
+}
+
+entity Employee {
+	firstName String required,
+	lastName String required,
+    lastName2 String,
+	email String required,
+	phoneNumber String,
+    nationality String required,
+    identification String required,
+    identificationType IdentificationType required,
+    insuredNumber String,
+	hireDate Instant required,
+    birthDate Instant,
+    gender Gender,
+    civilStatus String,
+    countryOfBirth String,
+	salary BigDecimal required min(0),
+    jornada JornadaType required,
+    language Language,
+    daysOfShift Integer min(0),
+    hoursOfShift Integer min(0),
+    jobCode Integer,
+    costCenter String
+    
+}
+
+entity Planilla {
+	tipo String,
+	consecutivoBAC Integer,
+	planBAC String,
+	nombre String,
+	notas String,
+	aprobador String,
+	notificantes String,
+	moneda Currency,
+	vacasMulti Float,
+	grupoAprobador String,
+	pagador String,
+	grupoContabilidad String
+    estado Estado required
+}
+
+entity Pago {
+    userID String required,
+	company String required,
+	sequenceBank Integer,
+    salarioBruto BigDecimal required min(0),
+    adicionales BigDecimal required min(0),
+    deducciones BigDecimal required min(0),
+    otrasdeducciones BigDecimal required min(0),
+    socialSecurity BigDecimal required min(0),
+ 	renta BigDecimal required min(0),
+ 	pagoNeto BigDecimal required min(0),  
+	adicionalesnodeducibles BigDecimal required min(0),
+	type String required,
+ 	status EstadoPago required,
+	processID String
+}
+
+entity DetallePago {
+    userID String required,
+	company String required,
+	sequenceBank Integer,
+    salarioBruto BigDecimal required min(0),
+    adicionales BigDecimal required min(0),
+    deducciones BigDecimal required min(0),
+    otrasdeducciones BigDecimal required min(0),
+    socialSecurity BigDecimal required min(0),
+ 	renta BigDecimal required min(0),
+ 	pagoNeto BigDecimal required min(0), 
+	adicionalesnodeducibles BigDecimal required min(0),
+	type String required,
+ 	status EstadoPago required,
+	processID String
+
+}
+
+enum Language {
+    FRENCH, ENGLISH, SPANISH
+}
+
+enum IdentificationType {
+	CN, CR, DU, NP, PT, SD
+}
+
+enum Currency {
+	CRC, USD
+}
+
+enum JornadaType {
+	TiempoCompleto, MedioTiempo, OcasionalHoras, OcasionalDias
+}
+
+enum TipoCedulaCompany {
+	JURIDICA, FISICA, NITE, DIMEX, OTRO
+}
+
+enum Estado {
+	ACTIVO, INACTIVO, CANCELADO
+}
+
+enum EstadoPago {
+	DRAFT, COMPLETED, PAID, CANCELLED
+}
+
+
+enum Gender {
+	MALE, FEMALE, OTHER
+}
+
+
+relationship OneToMany {
+  Company{employee(firstName)} to Employee{company(nombre)}
+  Company{planilla(nombre)} to Planilla{company(nombre)}
+  Planilla to Pago
+  Planilla to DetallePago
+  Planilla{employee(firstName)} to Employee{planilla(nombre)}
+}
+
+relationship ManyToMany {
+  Company to User
+  Planilla to User
+}
+
+relationship OneToOne {
+  Employee{user} to User
+}
+
+
+
+    

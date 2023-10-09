@@ -1,0 +1,39 @@
+{
+  "autoPlanillaApp": {
+    "company": {
+      "home": {
+        "title": "Companies",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Company",
+        "createOrEditLabel": "Crear o editar Company",
+        "notFound": "Ningún Companies encontrado"
+      },
+      "created": "Un nuevo Company ha sido creado con el identificador {{ param }}",
+      "updated": "Un Company ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Company ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Company {{ id }}?"
+      },
+      "detail": {
+        "title": "Company"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "tipoIdentificacion": "Tipo Identificacion",
+      "identificacion": "Identificacion",
+      "correoElectronico": "Correo Electronico",
+      "nombreComercial": "Nombre Comercial",
+      "telefono": "Telefono",
+      "provincia": "Provincia",
+      "canton": "Canton",
+      "distrito": "Distrito",
+      "barrio": "Barrio",
+      "sennas": "Sennas",
+      "estado": "Estado",
+      "website": "Website",
+      "employee": "Employee",
+      "planilla": "Planilla",
+      "user": "User"
+    }
+  }
+}

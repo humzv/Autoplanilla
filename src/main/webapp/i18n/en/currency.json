@@ -1,0 +1,9 @@
+{
+  "autoPlanillaApp": {
+    "Currency": {
+      "null": "",
+      "CRC": "CRC",
+      "USD": "USD"
+    }
+  }
+}

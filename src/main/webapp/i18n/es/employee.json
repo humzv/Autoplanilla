@@ -1,0 +1,47 @@
+{
+  "autoPlanillaApp": {
+    "employee": {
+      "home": {
+        "title": "Employees",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Employee",
+        "createOrEditLabel": "Crear o editar Employee",
+        "notFound": "Ningún Employees encontrado"
+      },
+      "created": "Un nuevo Employee ha sido creado con el identificador {{ param }}",
+      "updated": "Un Employee ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Employee ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Employee {{ id }}?"
+      },
+      "detail": {
+        "title": "Employee"
+      },
+      "id": "ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "lastName2": "Last Name 2",
+      "email": "Email",
+      "phoneNumber": "Phone Number",
+      "nationality": "Nationality",
+      "identification": "Identification",
+      "identificationType": "Identification Type",
+      "insuredNumber": "Insured Number",
+      "hireDate": "Hire Date",
+      "birthDate": "Birth Date",
+      "gender": "Gender",
+      "civilStatus": "Civil Status",
+      "countryOfBirth": "Country Of Birth",
+      "salary": "Salary",
+      "jornada": "Jornada",
+      "language": "Language",
+      "daysOfShift": "Days Of Shift",
+      "hoursOfShift": "Hours Of Shift",
+      "jobCode": "Job Code",
+      "costCenter": "Cost Center",
+      "user": "User",
+      "company": "Company",
+      "planilla": "Planilla"
+    }
+  }
+}

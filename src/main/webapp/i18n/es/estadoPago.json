@@ -1,0 +1,11 @@
+{
+  "autoPlanillaApp": {
+    "EstadoPago": {
+      "null": "",
+      "DRAFT": "DRAFT",
+      "COMPLETED": "COMPLETED",
+      "PAID": "PAID",
+      "CANCELLED": "CANCELLED"
+    }
+  }
+}

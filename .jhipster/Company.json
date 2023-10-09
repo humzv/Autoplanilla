@@ -1,0 +1,97 @@
+{
+  "applications": "*",
+  "changelogDate": "20230317175235",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "company",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "tipoIdentificacion",
+      "fieldType": "TipoCedulaCompany",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "JURIDICA,FISICA,NITE,DIMEX,OTRO"
+    },
+    {
+      "fieldName": "identificacion",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "correoElectronico",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "nombreComercial",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telefono",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "provincia",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "canton",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "distrito",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "barrio",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sennas",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estado",
+      "fieldType": "Estado",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "ACTIVO,INACTIVO,CANCELADO"
+    },
+    {
+      "fieldName": "website",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Company",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "firstName",
+      "otherEntityName": "employee",
+      "otherEntityRelationshipName": "company",
+      "relationshipName": "employee",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "nombre",
+      "otherEntityName": "planilla",
+      "otherEntityRelationshipName": "company",
+      "relationshipName": "planilla",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "company",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

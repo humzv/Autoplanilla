@@ -1,0 +1,105 @@
+{
+  "applications": "*",
+  "changelogDate": "20230317175237",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "planilla",
+  "fields": [
+    {
+      "fieldName": "tipo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "consecutivoBAC",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "planBAC",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nombre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notas",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "aprobador",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notificantes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "moneda",
+      "fieldType": "Currency",
+      "fieldValues": "CRC,USD"
+    },
+    {
+      "fieldName": "vacasMulti",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "grupoAprobador",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pagador",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "grupoContabilidad",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estado",
+      "fieldType": "Estado",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "ACTIVO,INACTIVO,CANCELADO"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Planilla",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "pago",
+      "otherEntityRelationshipName": "planilla",
+      "relationshipName": "pago",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "detallePago",
+      "otherEntityRelationshipName": "planilla",
+      "relationshipName": "detallePago",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "firstName",
+      "otherEntityName": "employee",
+      "otherEntityRelationshipName": "planilla",
+      "relationshipName": "employee",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "planilla",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityField": "nombre",
+      "otherEntityName": "company",
+      "otherEntityRelationshipName": "planilla",
+      "relationshipName": "company",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
